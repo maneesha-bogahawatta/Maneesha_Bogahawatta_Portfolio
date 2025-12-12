@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* 1. Import the Fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* 2. Configure the Theme directly here */
+@theme {
+  /* Colors */
+  --color-primary: #1e293b;   /* Deep Midnight Blue */
+  --color-accent: #a78bfa;    /* Soft Lavender */
+  --color-highlight: #2dd4bf; /* Teal */
+  --color-bgLight: #f8fafc;   /* Off-white background */
+
+  /* Fonts */
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+/* Tilt card styles (3D interaction) */
+.tilt-card {
+  transform-style: preserve-3d;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  will-change: transform;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+}
+.tilt-card:hover {
+  box-shadow: 0 18px 40px rgba(16,24,40,0.12);
+}

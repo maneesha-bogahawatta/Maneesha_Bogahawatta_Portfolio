@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  /* We use lowercase here to be safe */
+  --color-primary: #1e293b;
+  --color-accent: #a78bfa;
+  --color-highlight: #2dd4bf;
+  --color-bgLight: #f8fafc;
+}
